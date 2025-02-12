@@ -29,12 +29,14 @@ Apx is the default package manager in Vanilla OS, now availble on Fedora Copr re
 %autosetup %{?commit:-n %{name}-%{commit}}
 mkdir -p distrobox
 tar -xvf %{SOURCE1} -C distrobox
+mv distrobox-*/* distrobox
 
 %build
 %make_build
 
 %install
 %make_install
+make install-manpages
 
 %changelog
 %autochangelog
