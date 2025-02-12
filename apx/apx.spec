@@ -36,7 +36,7 @@ mv distrobox-*/* distrobox
 
 %install
 %make_install
-make install-manpages
+make install-manpages DESTDIR="%{?buildroot}"
 
 %changelog
 %autochangelog
