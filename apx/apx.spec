@@ -1,4 +1,6 @@
 %define _distrobox_gitref 3b9f0e8d3d8bd102e1636a22afffafe00777d30b
+%define datadir /usr/share
+%define debug_package %{nil}
 
 Name:		apx
 Version:	2.4.4
@@ -14,8 +16,6 @@ Source0:	https://github.com/Vanilla-OS/%{name}/archive/v%{version}.tar.gz#/%{nam
 %endif
 Source1:    https://github.com/89luca89/distrobox/archive/%{_distrobox_gitref}/distrobox-%{_distrobox_gitref}.tar.gz
 
-BuildArch:	noarch
-
 BuildRequires:	go 
 BuildRequires:	git
 BuildRequires:  make
@@ -28,7 +28,7 @@ Apx is the default package manager in Vanilla OS, now availble on Fedora Copr re
 %prep
 %autosetup %{?commit:-n %{name}-%{commit}}
 mkdir -p distrobox
-tar -xvf %{SOURCE1} -C distrobox
+tar -xvf %{SOURCE1}
 mv distrobox-*/* distrobox
 
 %build
@@ -36,7 +36,13 @@ mv distrobox-*/* distrobox
 
 %install
 %make_install
-make install-manpages
+make install-manpages DESTDIR=%{?buildroot}
+
+%files
+%{datadir}/%{name}/distrobox/*
+%{datadir}/man/man1/apx.1.gz
+%{_bindir}/apx
+/etc/apx/apx.json
 
 %changelog
 %autochangelog
