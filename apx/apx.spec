@@ -35,7 +35,6 @@ tar -xvf %{SOURCE1} -C distrobox
 
 %install
 %make_install
-make install-manpages DESTDIR="%{?buildroot}"
 
 %changelog
 %autochangelog
