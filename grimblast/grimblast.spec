@@ -24,13 +24,9 @@ Requires:   notify-send
 %description
 Hyprland screenshot utility using grim and slurp
 
-%prep
-%autosetup %{?commit:-n contrib-%{commit}}
-
-%build
-
 %install
-cd grimblast
+tax -xzf ${SOURCE0}
+cd v%{version}
 %make_install
 
 %files
