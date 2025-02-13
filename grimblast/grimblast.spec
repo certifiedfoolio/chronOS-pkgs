@@ -25,7 +25,7 @@ Requires:   notify-send
 Hyprland screenshot utility using grim and slurp
 
 %install
-tax -xzf ${SOURCE0}
+tar -xzf ${SOURCE0}
 cd v%{version}
 %make_install
 
