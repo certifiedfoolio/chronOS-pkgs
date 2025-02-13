@@ -11,11 +11,11 @@ Default configs for Vanilla-OS/apx.
 
 %prep
 mkdir -p %{?buildroot}/usr/share/apx
-tar -xvf %{SOURCE0}
 
 %build
 
 %install
+tar -xvf %{SOURCE0}
 cp -r stacks %{?buildroot}/usr/share/apx
 cp -r package-managers %{?buildroot}/usr/share/apx
 
