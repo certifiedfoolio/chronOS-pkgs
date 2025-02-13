@@ -1,3 +1,6 @@
+%define debug_package %{nil}
+%define datadir /usr/share
+
 Name:           apx-conf
 Version:        1.0.0
 Release:        %autorelease
@@ -8,10 +11,6 @@ Source0:        https://github.com/Vanilla-OS/vanilla-apx-configs/archive/refs/t
 
 %description
 Default configs for Vanilla-OS/apx.
-
-%prep
-
-%build
 
 %install
 mkdir -p %{?buildroot}/usr/share/apx
