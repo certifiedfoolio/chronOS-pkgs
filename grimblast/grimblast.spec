@@ -2,14 +2,14 @@
 %define debug_package %{nil}
 
 Name:		grimblast
-Version:	0.1.1
+Version:	0.1
 Release:	%autorelease
 Summary:	Hyprland screenshot utility
 
 License:	MIT
 URL:		https://github.com/hyprwm/contrib
 %if 0%{?shortcommit:1}
-Source0:	https://github.com/hyprwm/contrib/archive/%{commit}/contrib-%{shortcommit}.tar.gz
+Source0:	https://github.com/hyprwm/contrib/archive/refs/tags/v%{version}.tar.gz
 %else
 Source0:	https://github.com/hyprwm/contrib/archive/v%{version}.tar.gz#/contrib-v%{version}.tar.gz
 %endif
