@@ -1,5 +1,5 @@
 Name:		grimblast
-Version:	2.4.4
+Version:	0.1.1
 Release:	%autorelease
 Summary:	Hyprland screenshot utility
 
@@ -12,8 +12,15 @@ Source0:	https://github.com/hyprwm/contrib/archive/v%{version}.tar.gz#/contrib-v
 %endif
 
 BuildRequires:  scdoc
+BuildRequires:  make
 
-Requires:   
+Requires:   grim
+Requires:   slurp
+Requires:   hyprctl
+Requires:   hyprpicker
+Requires:   wl-copy
+Requires:   jq
+Requires:   notify-send
 
 %description
 Hyprland screenshot utility using grim and slurp
