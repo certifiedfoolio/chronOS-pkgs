@@ -16,8 +16,8 @@ mkdir -p %{?buildroot}/usr/share/apx
 
 %install
 tar -xvf %{SOURCE0}
-cp -r stacks %{?buildroot}/usr/share/apx
-cp -r package-managers %{?buildroot}/usr/share/apx
+cp -r vanilla-apx-configs-%{version}/stacks %{?buildroot}/usr/share/apx
+cp -r vanilla-apx-configs-%{version}/package-managers %{?buildroot}/usr/share/apx
 
 %files
 %{datadir}/apx/*
