@@ -10,11 +10,12 @@ Source0:        https://github.com/Vanilla-OS/vanilla-apx-configs/archive/refs/t
 Default configs for Vanilla-OS/apx.
 
 %prep
-mkdir -p %{?buildroot}/usr/share/apx
+%autosetup %{?commit:-n %{name}-%{commit}}
 
 %build
 
 %install
+mkdir -p %{?buildroot}/usr/share/apx
 tar -xvf %{SOURCE0}
 cp -r vanilla-apx-configs-%{version}/stacks %{?buildroot}/usr/share/apx
 cp -r vanilla-apx-configs-%{version}/package-managers %{?buildroot}/usr/share/apx
