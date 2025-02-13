@@ -10,7 +10,6 @@ Source0:        https://github.com/Vanilla-OS/vanilla-apx-configs/archive/refs/t
 Default configs for Vanilla-OS/apx.
 
 %prep
-%autosetup %{?commit:-n %{name}-%{commit}}
 
 %build
 
