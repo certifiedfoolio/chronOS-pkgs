@@ -6,9 +6,9 @@ Summary:	Default configs for apx
 License:	GPL-3.0-only
 URL:		https://github.com/Vanilla-OS/vanilla-apx-configs
 %if 0%{?shortcommit:1}
-Source0:	https://github.com/Vanilla-OS/vanilla-apx-configs/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
+Source0:	https://github.com/Vanilla-OS/vanilla-apx-configs/archive/%{commit}/vanilla-apx-configs-%{shortcommit}.tar.gz
 %else
-Source0:	https://github.com/Vanilla-OS/vanilla-apx-configs/archive/v%{version}.tar.gz#/%{name}-v%{version}.tar.gz
+Source0:	https://github.com/Vanilla-OS/vanilla-apx-configs/archive/v%{version}.tar.gz#/vanilla-apx-configs-v%{version}.tar.gz
 %endif
 
 %description
