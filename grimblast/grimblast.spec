@@ -1,3 +1,6 @@
+%define datadir /usr/share
+%define debug_package %{nil}
+
 Name:		grimblast
 Version:	0.1.1
 Release:	%autorelease
