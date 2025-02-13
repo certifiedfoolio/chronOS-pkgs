@@ -1,21 +1,22 @@
-Name:		apx-conf
-Version:	1.0.0
-Release:	%autorelease
-Summary:	Default configs for apx
+Name:           apx-conf
+Version:        1.0.0
+Release:        %autorelease
+Summary:        Default configs for apx
 
-License:	GPL-3.0-only
-URL:		https://github.com/Vanilla-OS/vanilla-apx-configs
+License:        GPL-3.0-only
+Source0:        https://github.com/Vanilla-OS/vanilla-apx-configs/archive/refs/tags/v%{version}.tar.gz
 
 %description
-Apx is the default package manager in Vanilla OS, now availble on Fedora Copr repositories. These are the default configs for it.
+Default configs for Vanilla-OS/apx.
 
 %prep
-%autosetup %{?commit:-n %{name}-%{commit}}
 mkdir -p %{?buildroot}/usr/share/apx
+tar -xvf %{SOURCE0}
 
 %build
 
 %install
+cp -r stacks %{?buildroot}/usr/share/apx
 cp -r package-managers %{?buildroot}/usr/share/apx
 
 %files

@@ -7,11 +7,6 @@ Summary:	A frontend in GTK 4 and Libadwaita for Apx
 
 License:	GPL-3.0-only
 URL:		https://github.com/Vanilla-OS/apx-gui
-%if 0%{?shortcommit:1}
-Source0:	https://github.com/Vanilla-OS/%{name}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
-%else
-Source0:	https://github.com/Vanilla-OS/%{name}/archive/v%{version}.tar.gz#/%{name}-v%{version}.tar.gz
-%endif
 
 BuildRequires:	gcc
 BuildRequires:	gcc-c++
