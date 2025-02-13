@@ -1,4 +1,5 @@
 %define debug_package %{nil}
+%define datadir /usr/share
 
 Name:		apx-gui
 Version:	1.0.4
@@ -40,7 +41,7 @@ Libadwaita frontend for Vanilla-OS/apx.
 %autosetup %{?commit:-n %{name}-%{commit}}
 
 %files
-/usr/*
+%{datadir}/*
 
 %build
 %meson
