@@ -29,7 +29,7 @@ Requires:	python3
 Requires:	python3-gobject
 Requires:	python3-pyyaml
 Requires:	python3-requests
-Requires:	gobject-introspection
+Requires:	gobject-intospection
 Requires:	gobject-introspection-devel
 Requires:	vte
 Requires:	vte-devel
