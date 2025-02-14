@@ -19,7 +19,6 @@ Branding for chronOS
 
 %install
 mkdir -p -m0755 \
-    %{buildroot}%{_datadir}/gnome-background-properties \
     %{buildroot}%{_datadir}/pixmaps \
     %{buildroot}%{_datadir}/ublue-os \
     %{buildroot}%{_sysconfdir}
@@ -27,6 +26,11 @@ mkdir -p -m0755 \
 mv logos/* %{buildroot}%{_datadir}/pixmaps
 mv fastfetch/fastfetch.jsonc %{buildroot}%{_datadir}/ublue-os/fastfetch.jsonc
 mv plymouth %{buildroot}%{_datadir}
+
+%files
+%attr(0755,root,root) %{_datadir}/pixmaps/fedora*
+%attr(0755,root,root) %{_datadir}/pixmaps/system-*
+%attr(0755,root,root) %{_datadir}/pixmaps/ublue-*
 
 %package fastfetch
 Summary:        Fastfetch configuration for chronOS
