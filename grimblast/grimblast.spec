@@ -1,32 +1,23 @@
-%define datadir /usr/share
 %define debug_package %{nil}
+%define datadir /usr/share
 
-Name:		grimblast
-Version:	0.1
-Release:	%autorelease
-Summary:	Hyprland screenshot utility
+Name:           grimblast
+Version:        0.1
+Release:        %autorelease
+Summary:        Hyprland screenshot utility
 
-License:	MIT
-URL:		https://github.com/hyprwm/contrib
-Source0:	https://github.com/hyprwm/contrib/archive/refs/tags/v%{version}.tar.gz
-
-BuildRequires:  scdoc
-BuildRequires:  make
-
-Requires:   grim
-Requires:   slurp
-Requires:   hyprctl
-Requires:   hyprpicker
-Requires:   wl-copy
-Requires:   jq
-Requires:   notify-send
+License:        MIT
+Source0:        https://github.com/hyprwm/contrib/archive/archive/refs/tags/v%{version}.tar.gz
 
 %description
 Hyprland screenshot utility using grim and slurp
 
-%install
-tar -xzf ${SOURCE0}
+%build
+tar -xvf %{SOURCE0}
 cd v%{version}
+%make_build
+
+%install
 %make_install
 
 %files

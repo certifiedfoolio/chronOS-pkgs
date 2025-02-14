@@ -41,7 +41,8 @@ Libadwaita frontend for Vanilla-OS/apx.
 %autosetup %{?commit:-n %{name}-%{commit}}
 
 %files
-%{datadir}/*
+%{datadir}/%{name}/*
+%{_bindir}/apx-gui
 
 %build
 %meson
