@@ -14,7 +14,7 @@ Hyprland screenshot utility using grim and slurp
 
 %build
 tar -xvf %{SOURCE0}
-cd contrib-%{version}
+cd contrib-%{version}/grimblast
 %make_build
 
 %install
