@@ -18,7 +18,10 @@ cd contrib-%{version}/grimblast
 %make_build
 
 %install
-%make_install
+ls -lah
+cd contrib-%{version}/grimblast
+install -v -D -m 0644 grimblast.1 --target-directory "%{buildroot}/usr/share/man/man1/"
+install -v -D -m 0755 grimblast --target-directory "%{buildroot}/usr/bin/"
 
 %files
 %{datadir}/man/man1/*
