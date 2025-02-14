@@ -41,7 +41,7 @@ Libadwaita frontend for Vanilla-OS/apx.
 %autosetup %{?commit:-n %{name}-%{commit}}
 
 %files
-%{datadir}/%{name}/*
+%{datadir}/*
 %{_bindir}/apx-gui
 
 %build

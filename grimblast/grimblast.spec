@@ -9,6 +9,17 @@ Summary:        Hyprland screenshot utility
 License:        MIT
 Source0:        https://github.com/hyprwm/contrib/archive/refs/tags/v%{version}.tar.gz
 
+BuildRequires:  scdoc
+BuildRequires:  make
+
+Requires:   grim
+Requires:   slurp
+Requires:   hyprctl
+Requires:   hyprpicker
+Requires:   wl-clipboard
+Requires:   jq
+Requires:   notify-send
+
 %description
 Hyprland screenshot utility using grim and slurp
 
