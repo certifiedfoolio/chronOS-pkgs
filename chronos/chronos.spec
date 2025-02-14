@@ -20,6 +20,7 @@ Branding for chronOS
 %install
 mkdir -p -m0755 \
     %{buildroot}%{_datadir}/gnome-background-properties \
+    %{buildroot}%{_datadir}/pixmaps \
     %{buildroot}%{_datadir}/ublue-os \
     %{buildroot}%{_sysconfdir}
 
