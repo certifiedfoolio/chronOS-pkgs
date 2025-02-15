@@ -31,7 +31,6 @@ Requires:	lightdm%{?_isa}
 
 # Themeing require
 Requires:	google-noto-sans-fonts
-Requires:	system-logos
 Requires:	desktop-backgrounds-compat
 
 Recommends:	lightdm-settings
@@ -41,7 +40,7 @@ Recommends:	onboard
 Requires:	(%{name}-cinnamon = %{version}-%{release} if cinnamon)
 
 %description
-A cross-distro LightDM greeter based on unity-greeter.
+A cross-distro LightDM greeter based on unity-greeter. Modified to not depend on system-logos.
 
 %package -n %{name}-cinnamon
 Summary: Slick-greeter customisation for the CINNAMON desktop
