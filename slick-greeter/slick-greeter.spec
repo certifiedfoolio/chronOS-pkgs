@@ -6,7 +6,7 @@ Version:	2.0.9
 Release:	2%{?dist}
 License:	GPL-3.0-or-later
 URL:		https://github.com/linuxmint/%{name}
-Source0:	%{url}/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/linuxmint/slick-greeter/archive/%{version}/%{name}-%{version}.tar.gz
 Source1:	10_%{name}-cinnamon.gschema.override.in
 Source2:	10_%{name}-mate.gschema.override
 Source3:	%{name}.conf
