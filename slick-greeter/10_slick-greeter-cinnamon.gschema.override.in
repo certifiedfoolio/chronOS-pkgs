@@ -1,0 +1,12 @@
+[x.dm.slick-greeter]
+background='@wallpaper@'
+background-color='@color@'
+cursor-theme-name='Paper'
+logo='/usr/share/pixmaps/system-logo-white.png'
+draw-user-backgrounds=false
+draw-grid=false
+enable-hidpi='auto'
+font-name='Noto Sans 11'
+icon-theme-name='Mint-Y-Aqua'
+show-hostname=false
+theme-name='Mint-Y-Dark-Aqua'
