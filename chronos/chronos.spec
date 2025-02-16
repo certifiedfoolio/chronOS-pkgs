@@ -11,6 +11,13 @@ URL:            https://github.com/ublue-os/packages
 VCS:           {{{ git_dir_vcs }}}
 Source:        {{{ git_dir_pack }}}
 
+Provides: fedora-logos
+Provides: centos-logos
+Provides: system-logos
+Obsoletes: fedora-logos
+Obsoletes: centos-logos
+Obsoletes: system-logos
+
 %description
 Branding for chronOS
 
