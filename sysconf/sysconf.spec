@@ -18,9 +18,9 @@ System configuration for chronOS
 
 %install
 mkdir -p -m0755 \
-    %{buildroot}%{_bindir}
-    %{buildroot}%{_sysconfdir}
-    %{buildroot}%{_datadir}
+    %{buildroot}%{_bindir} \
+    %{buildroot}%{_sysconfdir} \
+    %{buildroot}%{_datadir} \
     %{buildroot}/bin
 chmod +x bin/* -R
 mv firstsetup %{buildroot}%{_sysconfdir}/
