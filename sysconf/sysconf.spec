@@ -11,7 +11,7 @@ VCS:           {{{ git_dir_vcs }}}
 Source:        {{{ git_dir_pack }}}
 
 Provides: sudo
-Overrides: sudo
+Obsoletes: sudo
 
 %description
 System configuration for chronOS
