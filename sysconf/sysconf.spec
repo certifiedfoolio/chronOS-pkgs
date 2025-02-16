@@ -21,13 +21,15 @@ mkdir -p -m0755 \
     %{buildroot}%{_bindir}
     %{buildroot}%{_sysconfdir}
     %{buildroot}%{_datadir}
+    %{buildroot}/bin
+chmod +x bin/* -R
 mv firstsetup %{buildroot}%{_sysconfdir}/
 mv skel %{buildroot}%{_sysconfdir}/
 mv applications %{buildroot}%{_datadir}/
-mv bin %{buildroot}/usr
+mv bin %{buildroot}/bin
 
 %files
 %{_datadir}/applications/*
 %{_sysconfdir}/skel/*
 %{_sysconfdir}/firstsetup/*
-/usr/bin/*
+/bin/*
