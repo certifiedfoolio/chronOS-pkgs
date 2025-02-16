@@ -6,7 +6,7 @@ Release:        1%{?dist}
 Summary:        chronOS config
 
 License:        CC-BY-CA
-URL:        https://github.com/certifiedfoolio/chronOS-pkgs
+URL:           https://github.com/certifiedfoolio/chronOS-pkgs
 VCS:           {{{ git_dir_vcs }}}
 Source:        {{{ git_dir_pack }}}
 
