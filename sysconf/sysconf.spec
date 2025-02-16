@@ -31,5 +31,6 @@ mv bin %{buildroot}/bin
 %files
 %{_datadir}/applications/*
 %{_sysconfdir}/skel/*
+%{_sysconfdir}/skel/.local/*
 %{_sysconfdir}/firstsetup/*
 /bin/*
