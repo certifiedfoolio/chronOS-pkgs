@@ -30,4 +30,5 @@ mv usr %{buildroot}/
 %{_sysconfdir}/skel/*
 %{_sysconfdir}/skel/.local/*
 %{_sysconfdir}/firstsetup/*
+%{_sysconfdir}/profile.d/*
 /bin/*
