@@ -21,5 +21,11 @@ mkdir -p -m0755 \
      %{buildroot}%{_sysconfdir}/systemd/
 mv services %{buildroot}%{_sysconfdir}/systemd/system
 
+%posttrans
+systemctl enable flatpak-user-setup.service
+systemctl enable remove-system-flathub.service
+systemctl enable remove-system-flatpaks.service
+systemctl enable systemsetup.service
+
 %files
 %{_sysconfdir}/systemd/system/*
