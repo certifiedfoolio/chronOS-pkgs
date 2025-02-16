@@ -20,16 +20,10 @@ System configuration for chronOS
 {{{ git_dir_setup_macro }}}
 
 %install
-mkdir -p -m0755 \
-    %{buildroot}%{_bindir} \
-    %{buildroot}%{_sysconfdir} \
-    %{buildroot}%{_datadir} \
-    %{buildroot}/bin
 chmod +x bin/* -R
-mv firstsetup %{buildroot}%{_sysconfdir}/
-mv skel %{buildroot}%{_sysconfdir}/
-mv applications %{buildroot}%{_datadir}/
 mv bin %{buildroot}/
+mv etc %{buildroot}/
+mv usr %{buildroot}/
 
 %files
 %{_datadir}/applications/*
