@@ -13,6 +13,10 @@ Source:        {{{ git_dir_pack }}}
 Provides: sudo
 Obsoletes: sudo
 
+Requires: flatpak
+Requires: topgrade
+Requires: kitty
+
 %description
 System configuration for chronOS
 
