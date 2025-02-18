@@ -30,9 +30,7 @@ Requires:	python3-gobject
 Requires:	python3-pyyaml
 Requires:	python3-requests
 Requires:	gobject-introspection
-Requires:	gobject-introspection-devel
-Requires:	vte
-Requires:	vte-devel
+Requires:	vte291
 
 %description
 Libadwaita frontend for Vanilla-OS/apx.
