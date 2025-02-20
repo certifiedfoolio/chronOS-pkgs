@@ -19,13 +19,9 @@ machines, via an Atuin server.
 
 %prep
 %autosetup
-
-# use latest stable version from rustup
 curl -Lf "https://sh.rustup.rs" | sh -s -- --profile minimal -y
-
 source ~/.cargo/env
 cargo +stable build --release
-
 for SHELL in "bash" "fish" "zsh"; do
     target/release/%{name} gen-completions --shell $SHELL -o .
 done
