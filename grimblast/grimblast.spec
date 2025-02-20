@@ -18,7 +18,7 @@ Requires:   hyprctl
 Requires:   hyprpicker
 Requires:   wl-clipboard
 Requires:   jq
-Requires:   notify-send
+Requires:   libnotify
 
 %description
 Hyprland screenshot utility using grim and slurp
